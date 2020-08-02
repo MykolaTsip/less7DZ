@@ -1,0 +1,9 @@
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
+<div *ngFor="let u of user">
+  {{u.id}} --- {{u.name}} --- {{u.username}}
+  <br>
+  <button routerLink="{{u.id}}"> Show USER </button>
+</div>

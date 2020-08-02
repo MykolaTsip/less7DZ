@@ -1,0 +1,11 @@
+<hr>
+<router-outlet></router-outlet>
+<hr>
+
+<div *ngFor="let p of post">
+ {{p.id}} --- {{p.title}}
+  <br>
+  <button [routerLink]="p.id">
+    Showw
+  </button>
+</div>
